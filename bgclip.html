@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	#r1 {
+		border: 10px dashed green;
+		padding: 10px;
+		background: greenyellow;
+		background-clip: border-box;  
+	}
+
+	#r2 {
+		border: 10px dashed green;
+		padding: 10px;
+		background: limegreen;
+		background-clip: padding-box;
+	}
+
+	#r3 {
+		border: 10px dashed green;
+		padding: 10px;
+		background: greenyellow;
+		background-clip: content-box;
+	}
+</style>
+</head>
+<body>
+
+	<p> border-box</p>
+	<div id="r1">
+		<p>Hi border box</p>
+	</div>
+	<p>padding-box:</p>
+	<div id="r2">
+		<p>hi padding box</p>
+	</div>	
+	<p>content-box:</p>
+	<div id="r3">
+		<p>hi content-box</p>
+	</div>
+
+</body>
+</html>
