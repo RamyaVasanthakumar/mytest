@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSSdesign-assignment</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Georgia;
+    margin: 0;
+  }
+
+  header {
+        display: flex;
+        padding: 2px;
+        background: #1abc9c;
+  }
+  header div{
+        text-align: left;
+        color: antiquewhite;
+  }
+  .logo{
+    flex: 20%;
+  }
+  .csszengarden{
+    flex: 80%;
+  }
+  .title {
+        font-size: 60px;
+  }
+  .subtitle {
+        font-size: 25px;
+        text-align: center;
+        font-style: italic;   
+   }
+  
+  img{
+     width: 80%;
+     padding: 10px;
+  }
+  .fakeimg {
+  padding: 20px;
+}
+ 
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side {
+    flex: 20%;
+    background-color: lightgray;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.main {
+    flex: 80%;
+    background-color: white;
+    padding: 20px;
+}
+
+.footer {
+    padding: 20px; 
+    text-align: center;
+    background:lightgray ;
+}
+
+
+ /* Extra small devices (phones, 600px and down) 
+@media only screen and (max-width: 600px) {
+  .container {
+     width: 70%;
+  }
+}
+
+ Small devices (portrait tablets and large phones, 600px and up) 
+@media only screen and (min-width: 600px) {
+   .container {
+     width: 100%;
+  }
+}
+
+ Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px) {
+.container {
+     width: 100%;
+  }
+} 
+
+Large devices (laptops/desktops, 992px and up) 
+@media only screen and (min-width: 992px) {
+  .container {
+     width: 100%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {
+  .container {
+     width: 100%;
+  }
+} */
+
+</style>
+</head>
+<body class="container">
+  <header>
+      <div class="logo">
+        <img src="https://pbs.twimg.com/profile_images/378800000150126955/88cf42bd19a9d7fd03e41710b5d76eb2.png" atr="zengarden"  />
+      </div> 
+      <div class="csszengarden">
+      <h1 class="title">CSS ZenGarden</h1>
+      <p class="subtitle">The Beauty of <b>CSS Design</b></p>
+      </div>
+  </header>
+  <div class="row">
+    <div class="side">
+      <p><i>A demonstration of what can be accomplished through CSS-based design. Select any style sheet from the list to load it into this page.<br /><br />
+        Download the example<br /> <a href="./file/index.html" title="This page's source HTML code, not to be modified."> HTML FILE</a> and <a href="./file/style.css" title="This page's sample CSS, the file you may modify.">CSS FILE</a></i>
+      </p><br /><br />
+      <h3>Select a Design:</h3>
+      <ul>
+        <li>UNDER THE SEA!<br />by Eric Stoltz </li>
+        <li> MAKE ’EM PROUD<br />by Michael McAghon and Scotty Reifsnyder</li>
+        <li>ORCHID BEAUTY!<br />by Kevin Addison </li>
+        <li>OCEANSCAPE!<br />by Justin Gray </li>
+        <li>CSS CO., LTD<br />by Benjamin Klemm </li>
+        <li>SAKURA<br />by Tatsuya Uchida </li>
+        <li>KYOTO FOREST<br />by John Politowski </li>
+        <li>A WALK IN THE GARDEN<br />by Simon Van Hauwermeiren </li>
+        <li>UNDER THE SEA!<br />by Eric Stoltz </li>
+        <li>ORCHID BEAUTY!<br />by Kevin </li>
+      </ul>
+      <h3>Archives:</h3>
+      <ul>
+        <li>next designs » </li>
+        <li> « previous designs</li>
+        <li>View All Designs</li>
+      </ul>
+      <h3>Resources:</h3>
+      <ul>
+        <li>View This Design’s CSS </li>   
+        <li> CSS Resources</li>
+        <li>FAQ</li>
+        <li>Submit a Design</li>
+      </ul>
+      <div class="fakeimg">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/The_Zen_of_CSS_Design-cover.jpeg/220px-The_Zen_of_CSS_Design-cover.jpeg" />
+        <p><i><b>Zen Coding:</b>  A new speedy way of writing HTML code using CSS-like selector syntax.<br /> It was developed by our author <a href="/#">Sergey Chikuyonok</a> and released for Smashing Magazine and its readers.</i></p>
+    </div>
+    </div>
+    <div class="main">
+      <div>
+        <h2><i>The Road to Enlightenment</i></h2>
+        <p>Littering a dark and dreary road lay the past relics of browser–specific tags, incompatible DOMs, and broken CSS support.</p>
+        <p>Today, we must clear the mind of past practices. Web enlightenment has been achieved thanks to the tireless efforts of folk like the W3C, WaSP and the major browser creators.</p>
+        <p>The css Zen Garden invites you to relax and meditate on the important lessons of the masters. Begin to see with clarity. Learn to use the (yet to be) time–honored techniques in new and invigorating fashion. Become one with the web.</p>
+      </div>
+      <div>
+        <h2><i>So What is This About?</i></h2>
+        <p>There is clearly a need for CSS to be taken seriously by graphic artists. The Zen Garden aims to excite, inspire, and encourage participation. To begin, view some of the existing designs in the list. Clicking on any one will load the style sheet into this very page. The code remains the same, the only thing that has changed is the external .css file. Yes, really.</p>
+        <p>CSS allows complete and total control over the style of a hypertext document. The only way this can be illustrated in a way that gets people excited is by demonstrating what it can truly be, once the reins are placed in the hands of those able to create beauty from structure. To date, most examples of neat tricks and hacks have been demonstrated by structurists and coders. Designers have yet to make their mark. This needs to change.</p>
+      </div>
+      <div>
+       <h2><i>Participation</i></h2>
+       <p>Graphic artists only please. You are modifying this page, so strong CSS skills are necessary, but the example files are commented well enough that even CSS novices can use them as starting points. Please see the CSS Resource Guide for advanced tutorials and tips on working with CSS.</p>
+       <p>You may modify the style sheet in any way you wish, but not the HTML. This may seem daunting at first if you’ve never worked this way before, but follow the listed links to learn more, and use the sample files as a guide.</p>
+       <p>Download the sample html file and css file to work on a copy locally. Once you have completed your masterpiece (and please, don’t submit half–finished work) upload your .css file to a web server under your control. Send us a link to the file and if we choose to use it, we will spider the associated images. Final submissions will be placed on our server.</p>
+       <p>update: I’m looking for translators. If you are fluent in English and another language, this is another way to get involved with the project. Please <a href="/#">contact me</a> for details</p>
+     </div> 
+     <div>
+      <h2><i>Benefits</i></h2>
+      <p>Why participate? For recognition, inspiration, and a resource we can all refer to when making the case for CSS–based design. This is sorely needed, even today. More and more major sites are taking the leap, but not enough have. One day this gallery will be a historical curiosity; that day is not today.</p>
+    </div>
+    <div>
+      <h2><i>Requirements</i></h2>
+      <p>We would like to see as much CSS1 as possible. CSS2 should be limited to widely–supported elements only. The css Zen Garden is about functional, practical CSS and not the latest bleeding–edge tricks viewable by 2% of the browsing public. The only real requirement we have is that your CSS validates.
+      </p>
+      <p>Unfortunately, designing this way highlights the flaws in the various implementations of CSS. Different browsers display differently, even completely valid CSS at times, and this becomes maddening when a fix for one leads to breakage in another. View the Resources page for information on some of the fixes available. Full browser compliance is still sometimes a pipe dream, and we do not expect you to come up with pixel–perfect code across every platform. But do test in as many as you can. If your design doesn’t work in at least IE5+/Win and Mozilla (run by over 90% of the population), chances are we won’t accept it.</p>
+      <p>We ask that you submit original artwork. Please respect copyright laws. Please keep objectionable material to a minimum; tasteful nudity is acceptable, outright pornography will be rejected.</p>
+      <p>This is a learning exercise as well as a demonstration. You retain full copyright on your graphics, but we ask you release your CSS under a Creative Commons license identical to the one on this site so that others may learn from your work.</p>
+    </div>
+    <b><em><p role="contentinfo">By <a href="http://www.mezzoblue.com/">Dave Shea</a>. Bandwidth graciously donated by <a href="http://www.mediatemple.net/">mediatemple</a>. Now available: <a href="http://www.amazon.com/exec/obidos/ASIN/0321303474/mezzoblue-20/">Zen Garden, the book</a>.</p>
+    </div></em></b>
+  </div>
+
+  <div class="footer">
+    
+    <a href="http://validator.w3.org/check/referer" title="Check the validity of this site&#8217;s HTML" class="zen-validate-html">HTML</a>&nbsp;&nbsp;&nbsp;&nbsp;
+   
+    <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check the validity of this site&#8217;s CSS" class="zen-validate-css">CSS</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="View the Creative Commons license of this site: Attribution-NonCommercial-ShareAlike." class="zen-license">CC</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    <a href="http://mezzoblue.com/zengarden/faq/#aaa" title="Read about the accessibility of this site" class="zen-accessibility">A11y</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    <a href="https://github.com/mezzoblue/csszengarden.com" title="Fork this site on Github" class="zen-github">GH</a>
+  
+  </div>
+
+</body>
+</html>
